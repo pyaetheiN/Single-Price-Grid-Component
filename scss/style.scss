@@ -1,0 +1,133 @@
+@import "_config.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: $lightgray;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    font-weight: 400;
+}
+h1,h2{
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+main{
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+.wrapper{
+    max-width: 468px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0,0.1);
+}
+// card backgrounds
+.card-1{
+    background-color: #fff;
+
+    &__title{
+        color: $cyan;
+        font-weight: 700;
+    }
+    &__desc{
+        font-size: 1em;
+        color: $grayishblue;
+        font-weight: 400;
+    }
+}
+.card-2{
+    background-color: $cyan;
+    color: $lightgray;
+}
+.card-3{
+    background-color: $grayishblue;
+
+    &__title{
+        color: $lightgray;
+    }
+    &__desc{
+        font-size: 1em;
+        color: $lightgray;
+        opacity: 80%;
+        font-weight: 400;
+    }
+}
+.card{
+    padding: 1.5rem;
+    row-gap: 2rem;
+
+    &__title{
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    &__desc{
+        line-height: 1.4;
+    }
+    &__highlight{
+        color: $brightyellow;
+        font-weight: 700;
+    }
+    &__subscription__info{
+        align-items: center;
+        gap: 1rem;
+    }
+    &__price{
+        font-size: 2em;
+        color: #fff;
+        font-weight: 700;
+    }
+    &__month{
+        color: $month;
+    }
+    &__access{
+        font-size: 1.05em;
+        font-weight: 400;
+        margin-top: 0.5em;
+    }
+    &__sign-up{
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: $brightyellow;
+        padding: 0.7em;
+        border-radius: 7px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        transition: 0.3s;
+
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+}
+@media screen and (min-width: 968px){
+    .wrapper{
+        max-width: 688px;
+    }
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        padding: 2.5rem;
+
+        &__title{
+            font-size: 1.25em;
+        }
+    }
+}

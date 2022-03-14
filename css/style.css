@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.wrapper {
+  max-width: 468px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  background-color: #fff;
+}
+
+.card-1__title {
+  color: #2ab2af;
+  font-weight: 700;
+}
+
+.card-1__desc {
+  font-size: 1em;
+  color: #98a6bd;
+  font-weight: 400;
+}
+
+.card-2 {
+  background-color: #2ab2af;
+  color: #e5eff5;
+}
+
+.card-3 {
+  background-color: #98a6bd;
+}
+
+.card-3__title {
+  color: #e5eff5;
+}
+
+.card-3__desc {
+  font-size: 1em;
+  color: #e5eff5;
+  opacity: 80%;
+  font-weight: 400;
+}
+
+.card {
+  padding: 1.5rem;
+  row-gap: 2rem;
+}
+
+.card__title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.card__desc {
+  line-height: 1.4;
+}
+
+.card__highlight {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+.card__subscription__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.card__price {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.card__month {
+  color: #b6d0e2;
+}
+
+.card__access {
+  font-size: 1.05em;
+  font-weight: 400;
+  margin-top: 0.5em;
+}
+
+.card__sign-up {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #c0df34;
+  padding: 0.7em;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__sign-up:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+@media screen and (min-width: 968px) {
+  .wrapper {
+    max-width: 688px;
+  }
+  .cards-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 2.5rem;
+  }
+  .card__title {
+    font-size: 1.25em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
