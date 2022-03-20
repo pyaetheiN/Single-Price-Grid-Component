@@ -107,6 +107,7 @@ main {
 .card__highlight {
   color: #c0df34;
   font-weight: 700;
+  font-size: 1.1em;
 }
 
 .card__subscription__info {
@@ -175,6 +176,9 @@ main {
   }
   .card__desc {
     font-size: 0.875em;
+  }
+  .card__highlight {
+    font-size: 1.17em;
   }
 }
 /*# sourceMappingURL=style.css.map */

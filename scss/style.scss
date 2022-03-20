@@ -81,6 +81,7 @@ main{
     &__highlight{
         color: $brightyellow;
         font-weight: 700;
+        font-size: 1.1em;
     }
     &__subscription__info{
         align-items: center;
@@ -138,6 +139,9 @@ main{
         }
         &__desc{
             font-size: 0.875em;
+        }
+        &__highlight{
+            font-size: 1.17em;
         }
     }
 }
