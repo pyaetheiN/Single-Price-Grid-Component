@@ -170,6 +170,9 @@ main {
   .card__title {
     font-size: 1.25em;
   }
+  .card:nth-child(1) .card-1__title {
+    margin-bottom: 0.5rem;
+  }
   .card__desc {
     font-size: 0.875em;
   }

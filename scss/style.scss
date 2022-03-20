@@ -133,6 +133,9 @@ main{
         &__title{
             font-size: 1.25em;
         }
+        &:nth-child(1) .card-1__title{
+            margin-bottom: 0.5rem;
+        }
         &__desc{
             font-size: 0.875em;
         }
